@@ -55,13 +55,6 @@ table/ graph of usage with GB etc
 \section{Low Latency Streaming Technology}
 How hoot powers low latency streaming.
 
-\section{Hoot Architecture}
-\subsection{Broadcast Side - iOS}
-Video is captured at a resolution of 540x960 to 720x1280 based on network connectivity. Audio is captured using the built in iOS device microphone at a sampling rate of 44.1 KHz. Optionally, real time filters (Black and White, Glow, Fisheye, Sepia) can be applied to captured video stream. Video and audio are encoded using the native hardware H.264 and AAC encoders, respectively. The video is encoded using a VBR algorithm with a maximum bitrate of 1 Mbps. Audio is encoded in AAC format with a bitrate of 128 Kbps. The H.264 + AAC stream is encoded into an RTMP stream and is transmitted to Hoot opensource RTMP server.
-\subsection{Broadcast Side — Mac}
-Video is captured at native screen resolution, and audio is captured using the built in microphone at a sampling rate of 44.1 KHz. Our Mac app supports capturing FaceTime, Screenshare, and a combination of FaceTime and Screenshare. Video and audio are encoded using the native H.264 and AAC encoders, respectively. The video is encoded with a VBR algorithm. Audio is encoded in AAC format with a bitrate of 128 Kbps. The H.264 + AAC stream is encoded into an RTMP stream and is transmitted to our proprietary RTMP server. 
-
- 
 
 \section{Anonymity and privacy over VPN and Tor}
 Anonymity and privacy are key to enable free speech, and this matters
