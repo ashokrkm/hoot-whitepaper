@@ -7,7 +7,7 @@ Video frames are captured at a resolution of 540x960 to 720x1280 based on networ
 Video frames are captured at native screen resolution, and audio stream is captured using the built in microphone at a sampling rate of 44.1 KHz. Hoot Mac app supports capturing FaceTime, Screenshare, and a combination of FaceTime and Screenshare. Video frames and audio stream are encoded using the native H.264 and AAC encoders, respectively. The video frames are encoded with a VBR algorithm. Audio stream is encoded in AAC format with a bitrate of 128 Kbps. The H.264 + AAC stream is encoded into an RTHP stream and is transmitted to our open source RTHP server.
 
 \subsection{Viewer Side iOS/Android }
- Hoot Open Source Native mobile media player decodes RTHP + H.264 and AAC data to make the broadcast available to viewer in real-time. The HLS (HTTP Live Streaming) stream that is made available can be played using the iOS/Android Native media players.
+ Hoot Open Source Native mobile media player decodes RTHP + H.264 and AAC data to make the broadcast available to viewer in real-time. The HLS (HTTP Live Streaming) stream that is made available can be played using the iOS/Android Native media players, when the Hoot RTHP player or app is not available.
 
 \subsection{Viewer Side Mac/PC} 
 The RTHP stream is played using Adobe Flash technology supported by all modern browsers. The HLS stream can be played using HTML5 player available in all modern browsers.
