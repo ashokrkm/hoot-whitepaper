@@ -1,4 +1,7 @@
 \section{Hoot Architecture}
+
+
+
 \subsection{Broadcast Side - iOS}
 Hoot protocol for realtime livestreaming video is called Real time Hoot protocol[RTHP].
 Video frames are captured at a resolution of 540x960 to 720x1280 based on network connectivity. Audio stream is captured using the built in iOS device microphone at a sampling rate of 44.1 KHz. Optionally, real time filters (Black and White, Glow, Fisheye, Sepia) can be applied to captured video frames in realtime. Video and audio are encoded using the native hardware H.264 and AAC encoders, respectively. The video frames are encoded using a VBR algorithm with a maximum bitrate of 1 Mbps. Audio stream is encoded in AAC format with a bitrate of 128 Kbps. The H.264 + AAC stream is encoded into an RTHP stream and is transmitted to Hoot opensource RTHP server.
