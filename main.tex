@@ -75,8 +75,18 @@ Hoot Vision
 \section{ERC223 Compatibility}
 We are monitoring the ERC223 token standard proposal\footnote{https://github.com/ethereum/EIPs/issues/223} and are factoring future compatibility into the design of our Namespace Hoot tokens.
 
+\section{Choice of Blockchain}
+The seed protocol will run on top of the ethereum blockchain protocol which makes the decentralized app abstraction. 
+
+\sout{from tezos need to edit}
+
+Hoot can instantiate any other blockchain based protocol. Its seed protocol specifies a procedure for stakeholders to approve amendments to the protocol,
+\emph{including} amendments to the amendment procedure itself.
+Upgrades to Hoot are staged through a testing environment to allow stake-holders to recall potentially problematic amendments.
+
 \section{What makes Hoot special}
 Hoot special
+zero latency live-streaming
 
 \subsection{Problem \& solution}
 Unfettered, censorship free live streaming
@@ -131,7 +141,6 @@ e-sports gaming event. Hoot miners, streamers and viewers can also load Hoot
 tokens on to their respective accounts using crypto-currencies such as Bitcoin,
 Ethereum, Litecoin, Monero, Zcash and fiat currencies such as USD, EUR among others.
 
-\section{Auction and finding best price for unused compute}
 
 
 \section{Un-censorable P2P identity and reputation database}
@@ -151,6 +160,13 @@ register to be an independent third party escrow agent. Escrow agents
 also earn feedback and trust which are hashed and stored in the
 blockchain using their public gpg key and hashed username so it
 becomes un-censorable.
+
+
+\section{Auction and finding best price for excess compute}
+To bootstrap the network, Hoot network will continuously run Vickrey auctions to find the best service to run on the miners computer that has excess capacity. (A \emph{Vickrey auction} is one in which the winner pays the second-highest price, not the price they themselves bid).
+Hoot can instantiate any auction protocol, if they find a suitable auction protocol that is superior to Vickrey. Its seed protocol specifies a procedure for stakeholders to approve amendments to the auction protocol,
+\emph{including} amendments to the auction amendment procedure itself.
+Upgrades to Hoot auction protocol are staged through a testing environment to allow stake-holders to recall potentially inferior amendments. 
 
 \section{Hoot Development Timeline}
 The Hoot consumer mobile app which uses Facebook or Twitter to authenticate is already live in the iTunes AppStore\footnote{Hoot live on iOS AppStore https://appsto.re/us/40RS-.i} and Google Android Play Store\footnote{Hoot Live on Google Playstore https://play.google.com/store/apps/details?id=com.onhoot.android}.
