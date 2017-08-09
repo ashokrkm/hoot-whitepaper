@@ -120,12 +120,35 @@ Hoot can instantiate any other blockchain based protocol. Its seed protocol spec
 \emph{including} amendments to the amendment procedure itself.
 Upgrades to Hoot are staged through a testing environment to allow stake-holders to recall potentially problematic amendments.
 
-\section{What makes Hoot special}
-Hoot special
-zero latency live-streaming
 
 \subsection{Problem \& solution}
 Unfettered, censorship free live streaming
+
+
+\section{Customer Problem}
+The consumer world is ready for mobile live broadcasting. Participation in a live-stream is the next big wave and future of interactive live TV. Facebook serves about 8B video views a day and Snapchat about 6B. Current mobile live-steaming apps do not deliver true real-time video, failing in typical real world mobile use cases where high bandwidth and battery usage is unacceptable. Consumers also lose their memorable moments as the live-streams are ephemeral. This leaves unanswered the question who will be the Instagram, Snapchat or Netflix for live video.
+
+
+\section{Solution / Product Offering}
+A consumer grade true real-time live streaming service needs to be
+built from the ground up to offer live-streaming of mobile games and
+mobile eSports, for iPhone, iPad, Android smartphones and
+tablets. Hoot's proprietary live-streaming technology brings true real-time video in a scalable way to its audience, with just the network latency. Hoot's smart mobile streaming, being self adaptive based on network conditions and available bandwidth, results in significantly lower bandwidth and battery consumption, leading to superior user experience. In addition to the mobile apps, Hoot also allows users to stream from their Mac/PC devices directly to engage their social audience. Hoot is the best way to watch, broadcast interactive live stream videos and discover talented broadcasters.
+
+\section{What makes Hoot special}
+When compared to other products on the market, Hoot has several defensible advantages:
+\begin{itemize}
+\item[-]Optimized for 2G/3G networks around the world, low CPU and GPU usage, saves battery and bandwidth consumption
+\item[-]Next-gen live-streaming product that enables self-serve streaming from mobile
+\item[-]Allows to interleave background music in a seamless manner
+\item[-]Proprietary patent-pending technology architected from the
+  ground up requiring no licensing fees
+\item[-]Hoot offers instant archival of live-stream videos removing
+  need to upload files again at the end of livestream
+\item[-]Modular architecture allows building tor/vpn modules inorder
+  to enable censorship free livestreaming to promote free speech
+\end{itemize}
+
 
 \section{Traction \& Usage}
 table/ graph of usage with GB etc
@@ -142,7 +165,7 @@ How hoot powers low latency streaming.
 The live connection is encrypted using AES\_256\_CBC, with HMAC-SHA1 for message authentication and DHE\_RSA as the key exchange mechanism. Every Hoot opensource player connection is authenticated.
 An authorization key is needed to view a private Hoot video stream. Signup, interactions, HLS streams and archived static content are end-to-end HTTPS  SSL encrypted to ensure strong security.    
 
-\section{Anonymity and privacy over VPN and Tor}
+\subsection{Anonymity and privacy over VPN and Tor}
 Anonymity and privacy are key to enable free speech, and this matters
 more so in countries where free speech continues to be an ongoing
 issue. In combination with blockchain technology, the network is
@@ -182,12 +205,12 @@ Ethereum, Litecoin, Monero, Zcash and fiat currencies such as USD, EUR among oth
 
 
 
-\section{Un-censorable P2P identity and reputation database}
+\subsection{Un-censorable P2P identity and reputation database}
 Since there is an economy of trading in the marketplace of the Hoot network, having a Peer to peer
 identity and reputation database to enable seamless, non-custodial
 de-centralized, trust-free interactions becomes essential. Feedback and reviews as well as point scoring out of a maximum of 5 and minimum of 1 for quality of interactions factor into an agents reputation trust score. The trust score of each agent is hashed into the blockchain using their public gpg key and hashed username so as to make them Un-censorable.
 
-\section{Multi-sig escrow wallets}
+\subsection{Multi-sig escrow wallets}
 Hoot tokens are first sent to a multi-sig escrow wallet, that is controlled by the buyer/viewer, seller/streamer and an
 independent third-party escrow. Any
 two out of the three parties need to sign in order for the transaction to be
@@ -201,10 +224,39 @@ blockchain using their public gpg key and hashed username so it
 becomes un-censorable.
 
 
-\section{Auction to find optimal price}
+\subsection{Auction to find optimal price}
 To bootstrap the network, Hoot network will continuously run Vickrey auctions to find the best service to run on the miners computer that has excess capacity. A \emph{Vickrey auction} is one in which the winner pays the second-highest price, not the price they themselves bid, which has been effectively used by Google adsense and adwords.
 Hoot can instantiate any auction protocol, if they find a suitable auction protocol that is superior to Vickrey. Its seed protocol specifies a procedure for stakeholders to approve amendments to the auction protocol,
-\emph{including} amendments to the auction amendment procedure itself. Upgrades to Hoot auction protocol are staged through a testing environment to allow stake-holders to recall potentially inferior amendments, that lead to sub-optimal pricing for network stakeholders. 
+\emph{including} amendments to the auction amendment procedure
+itself. Upgrades to Hoot auction protocol are staged through a testing
+environment to allow stake-holders to recall potentially inferior
+amendments, that lead to sub-optimal pricing for network
+stakeholders. 
+
+Since the hoot network can also be used for other tasks that streaming live video, the network can be extended to run any computing task such as computer graphics, business applications, machine learning, crytography, malware prevention analysis, science and services, making the Hoot network a Uber for computers, enabling miners to rent their unused CPU/GPU cycles and get paid in Hoot cryptocurrency. Hence the Hoot de-centralized network powers true cloud computing.
+
+\subsection{Currency And Issuance}
+
+The Hoot network includes its own built-in currency, HOOT Coins, which serves the dual purpose of providing a primary liquidity layer to allow for efficient exchange between various types of digital assets and, more importantly, of providing a mechanism for paying transaction fees.
+
+The issuance model will be as follows:
+
+\begin{itemize}
+
+\item HOOT Coins will be released in a currency sale at the price of 1000-2000 HOOT Coins per BTC, a mechanism intended to fund the Hoot organization and pay for development that has been used with success by other platforms such as Mastercoin, ETH, Tezos and NXT. Earlier buyers will benefit from larger discounts. The BTC, ETH, XMR, and LTC received from the sale will be used entirely to pay salaries and bounties to developers and invested into various for-profit and non-profit projects in the Hoot cryptocurrency ecosystem.
+
+\end{itemize}
+
+\subsection{Hoot carbon footprint, mining, scarcity and profitability}
+Bitcoin has made cryptocurrencies popular and brought it to the mainstream, but it has a dark side, its ever increasing carbon footprint. In late 2013, 8.25 megatonnes (8,250,000 tonnes) of CO$_2$ per year
+was estimated to be the carbon footprint of Bitcoin per year\footnote{https://pando.com/2013/12/16/bitcoin-has-a-dark-side-its-carbon-footprint/}. These
+computers are consuming so much electricity that it’s already
+unprofitable to mine in some regions of the world. Since excess
+bandwidth and compute capacity is utilized towards streaming,
+encoding, object recognition
+and security of video and audio streams the resources otherwise would
+be utilized are profitably used.  Since Hoot tokens are fairly distributed to miners corresponding to their compute and bandwidth availability irrespective of how much CPU they control, the Hoot carbon footprint will be exponentially lower than the Bitcoin network which depends on continuously increasing complexity of the hashing required for mining. Since hoot tokens can only be mined or acquired from the platform, they will tend to be a scarce token.
+
 
 \section{Hoot Development Timeline}
 The Hoot consumer mobile app which uses Facebook or Twitter to authenticate is already live in the iTunes AppStore\footnote{Hoot live on iOS AppStore https://appsto.re/us/40RS-.i} and Google Android Play Store\footnote{Hoot Live on Google Playstore https://play.google.com/store/apps/details?id=com.onhoot.android}.
@@ -229,7 +281,7 @@ or Google Chrome which fallback to HTML5 HLS video format for playback
 of the live-streams.
 
 
-
+\subsection{Tor and VPN to enable uncensorable live-streaming }
 Tor modules to live-stream video over the onion routed tor network needs
 to be built. Integration with VPN needs to be built in order to evade censorship. This would enable true zero knowledge live-streams in
 countries where censorships and free speech continue to be ongoing
@@ -239,31 +291,8 @@ The underlying hoot technology may also be used to build an open
 source low cost security and surveillance alternative to closed systems
 such as Nest.
 
-\section{Hoot carbon footprint, mining, scarcity and profitability}
-Bitcoin has made cryptocurrencies popular and brought it to the mainstream, but it has a dark side, its ever increasing carbon footprint. In late 2013, 8.25 megatonnes (8,250,000 tonnes) of CO$_2$ per year
-was estimated to be the carbon footprint of Bitcoin per year\footnote{https://pando.com/2013/12/16/bitcoin-has-a-dark-side-its-carbon-footprint/}. These
-computers are consuming so much electricity that it’s already
-unprofitable to mine in some regions of the world. Since excess
-bandwidth and compute capacity is utilized towards streaming,
-encoding, object recognition
-and security of video and audio streams the resources otherwise would
-be utilized are profitably used.  Since Hoot tokens are fairly distributed to miners corresponding to their compute and bandwidth availability irrespective of how much CPU they control, the Hoot carbon footprint will be exponentially lower than the Bitcoin network which depends on continuously increasing complexity of the hashing required for mining. Since hoot tokens can only be mined or acquired from the platform, they will tend to be a scarce token.
 
 \section{Uber for Computers}
-Since the hoot network can also be used for other tasks that streaming live video, the network can be extended to run any computing task such as computer graphics, business applications, machine learning, crytography, malware prevention analysis, science and services, making the Hoot network a Uber for computers, enabling miners to rent their unused CPU/GPU cycles and get paid in Hoot cryptocurrency. Hence the Hoot de-centralized network powers true cloud computing.
-
-\section{Currency And Issuance}
-
-The Hoot network includes its own built-in currency, HOOT Coins, which serves the dual purpose of providing a primary liquidity layer to allow for efficient exchange between various types of digital assets and, more importantly, of providing a mechanism for paying transaction fees.
-
-The issuance model will be as follows:
-
-\begin{itemize}
-
-\item HOOT Coins will be released in a currency sale at the price of 1000-2000 HOOT Coins per BTC, a mechanism intended to fund the Hoot organization and pay for development that has been used with success by other platforms such as Mastercoin, ETH, Tezos and NXT. Earlier buyers will benefit from larger discounts. The BTC, ETH, XMR, and LTC received from the sale will be used entirely to pay salaries and bounties to developers and invested into various for-profit and non-profit projects in the Hoot cryptocurrency ecosystem.
-
-\end{itemize}
-
 
 \section{Conclusion}
 Bet on the future with Hoot live streaming protocol.
