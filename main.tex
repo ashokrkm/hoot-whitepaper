@@ -16,7 +16,11 @@
 \usepackage{amsmath}
 \usepackage[normalem]{ulem}
 % \usepackage{soul}
- 
+\usepackage[utf8]{inputenc}
+\usepackage[table]{xcolor}
+\usepackage[english, status=draft]{fixme}
+\fxusetheme{color}
+
 \begin{document}
 
 \maketitle
@@ -151,6 +155,44 @@ When compared to other products on the market, Hoot has several defensible advan
 
 \section{Traction \& Usage}
 table/ graph of usage with GB etc
+
+\setlength{\arrayrulewidth}{1mm}
+\setlength{\tabcolsep}{18pt}
+\renewcommand{\arraystretch}{2.5} 
+\newcolumntype{s}{>{\columncolor[HTML]{AAACED}} p{3cm}}
+\arrayrulecolor[HTML]{DB5800}
+ 
+
+\fxerror*{put right numbers}
+
+\begin{tabular}{ |c|c| }
+\hline
+\rowcolor{lightgray} \multicolumn{2}{|c|}{User Statistics} \\
+\hline
+Metric Name & Metric Value  \\
+\hline
+Monthly Active Users (MAU) & 14,769 \\
+% \rowcolor{gray}
+Total Users & 300,000  \\
+\hline
+\end{tabular}
+
+\begin{tabular}{ |c|c| }
+\hline
+\rowcolor{lightgray} \multicolumn{2}{|c|}{Live Video Streaming Statistics} \\
+\hline
+Metric Name & Metric Value  \\
+\hline
+Number of Videos & 48,207 \\
+Average Viewers per stream & 155 \\
+Average Stream Duration & 4 minutes 35 seconds \\
+Total Time Watched & 37k days or 100 years \\
+% \rowcolor{gray}
+\hline
+\end{tabular}
+
+\fxerror*{put right numbers}
+
 
 \section{Low Latency Streaming Technology}
 How hoot powers low latency streaming.
