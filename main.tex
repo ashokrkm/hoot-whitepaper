@@ -30,6 +30,8 @@ The Hootcoin team is building the next generation technology for live
 Streaming services based on blockchain technology and a new
 innovative open source de-centralized live streaming protocol that would completely eliminate expensive content delivery networks and use peer-to-peer nodes for delivering not just live streaming video but also archived videos.
 
+A peer-to-peer hyperstream protocol to make the live streaming faster, safer, and completely open.
+
 \sout{We will use crypto-financing (Initial Coin Offering) for capital rather than traditional venture capital and shareholders.}
 
 \end{abstract}
@@ -134,6 +136,9 @@ Upgrades to Hootcoin network are staged through a testing environment to allow s
 \section{Problem \& solution}
 
 
+
+\subsection{Problem or Current Centralized Streaming Solution}
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1.0\textwidth]{problem-architecture}
@@ -141,12 +146,61 @@ Upgrades to Hootcoin network are staged through a testing environment to allow s
   \label{image:problem-architecture}
 \end{figure}
 
+Figure \ref{image:problem-architecture} shows the state of current live streaming system. There are 4 components to a live streaming system. They are explained below.
+\subsubsection{Broadcasting Software}
+A proprieteary mobile video encoding software is used. The primary purpose of this software is to capture video frames and audio, from mobile, desktop, or stand alone cameras. The software encode the captured video and audio frames into a video standard, and a closed/proprietary video streaming protocol and is published to Streaming software.
+
+\subsubsection{Broadcasting Server Software}
+Incumbent software that solves this problem are Wowza\footnote{https://www.wowza.com/products} and Adobe\footnote{https://www.adobe.com/products/catalog.html}. The Broadcasting software receives the encoded live streams and generates small fragments of video files that are then published to a Content Delivery Network.
+
+\subsubsection{Centralized Content Delivery Network}
+The Broadcasting Server Software publishes the generated video fragment files to Content Delivery Network such as Amazon Cloudfront \footnote{https://aws.amazon.com/cloudfront/} or Microsoft Azure \footnote{https://azure.microsoft.com/en-us/services/media-services/}
+
+\subsubsection{Video Player}
+This is the final step in live video streaming. Media/Video/Audio clients for platforms: mobile, desktop, play out the video files from the content delivery networks.
+
+
+These are the problems with current live streaming system:
+\begin{itemize}
+  \item{Centralized points of failures: Backend streaming software, relying on content delivery networks}
+  \item{Proprietary and closed source software}
+  \item{Prone to censorship as easy to control/shutdown the service}
+  \item{Expensive licensing fees}
+\end{itemize}
+
+\subsection{Hootcoin Solution / Hoot Network Solution/ Hoot Solution}
+
+
 \begin{figure}[h!]
   \centering
   \includegraphics[width=1.0\textwidth]{hoot-solution}
   \caption{Open Source, decentralized, censorship resistant Hoot live streaming system}
   \label{image:hoot-solution}
 \end{figure}
+
+
+Figure \ref{image:problem-architecture} is the proposed live streaming system. They are explained below.
+\subsubsection{Hoot Open Source Broadcasting Software}
+Hoot Open Source Broadcasting captures video frames and audio. All major platforms: iOS, Android, Mac, Windows, Linux will be supported. The captured video frames and audio data are encoded to widely accepeted open video and audio formats: H.264 and AAC. The encoded H.264 and AAC audio is published to the Hoot Network with Real Time Hoot Protocol.
+
+\subsubsection{Hoot P2P Node}
+Miners in the Hoot P2P node will run Hootcoin software sharing unused bandwidth and earning Hootcoins for doing so. This is a highly resilient fault tolerant networks, and miners will be able to join or leave the network anytime. The Hoot P2P Node replaces the need for a broadcasting server software and content delivery network.
+
+\subsubsection{Hoot Open Source Video player}
+Hoot Open Source Video player plays the live stream in realtime. All major platforms: iOS, Android, Mac, Windows, Linux will be supported.
+
+\subsubsection{Archived videos}
+Broadcasted video are also continously archived, and will be stored in decentralized file system IPFS \footnote{}
+
+Hoot live stream protocl make the live streaming faster, safer, and more open by
+
+\begin{itemize}
+  \item{No centralized points of failures}
+  \item{Highly resilient fault tolerant network with peer to peer nodes}
+  \item{Censorship resitant as there are no centralized points of failure}
+  \item{All software is open source}
+\end{itemize}
+
 
 \subsection{Customer Problem}
 The consumer world is ready for mobile live broadcasting. Participation in a live-stream is the next big wave and future of interactive live TV. Facebook serves about 8B video views a day and Snapchat about 6B. Current mobile live-steaming apps do not deliver true real-time video, failing in typical real world mobile use cases where high bandwidth and battery usage is unacceptable. Consumers also lose their memorable moments as the live-streams are ephemeral. This leaves unanswered the question who will be the Instagram, Snapchat or Netflix for live video.
@@ -173,10 +227,11 @@ When compared to other products on the market, Hoot has several defensible advan
 
 
 \section{Traction \& Usage}
+A mobile mobile consumer application is already live on the iOS AppStore and Google Playstore.
 
 \fxerror*{put right numbers}
 
-Tables \ref{table:1} and \ref{table:2} show the usage statistics of Hoot Live consumer app already live in the Apple iOS Store and Android Playstore.
+Tables \ref{table:1} and \ref{table:2} show the usage statistics.
 
 \setlength{\arrayrulewidth}{.7mm}
 \setlength{\tabcolsep}{18pt}
@@ -225,6 +280,7 @@ Total Time Watched & 37k days or 100 years \\
 
 
 \section{Low Latency Streaming Technology}
+\fxerror{maybe not needed}
 How hoot powers low latency streaming.
 
 \include{hoot-architecture}
