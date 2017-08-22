@@ -7,6 +7,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 % \usepackage{lmodern}
+\usepackage{tikz}   
 
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
@@ -90,5 +91,13 @@ Hoot AR ads helps usher a golden age of performant video ads like Google adwords
 \end{frame}
 \begin{frame}[standout]
   Hoot AR ads - building Adwords of the web. Questions?
+  \begin{tikzpicture}
+  \node (img1) {\includegraphics[height=5cm]{static/arad/arad1}};
+  % \pause
+  \node (img2) at (img1.south east) {\includegraphics[height=4cm]{static/arad/arad2}};
+  % \pause
+  \node (img3) at (img2.south west) [yshift=3cm] {\includegraphics[height=4cm]{static/arad/arad3}};
+  \end{tikzpicture}
+  
 \end{frame}
 \end{document}
