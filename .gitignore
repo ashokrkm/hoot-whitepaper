@@ -5,6 +5,14 @@
 *.out
 *.blg
 *zh.bbl
+*.lb
+*.nav
+*.snm
+*.gz
+*.vrb
+*.lot
+*.lof
+*.synctex.gz
 
 # PDF output - usually a bad idea to keep this in Git
 *.pdf
