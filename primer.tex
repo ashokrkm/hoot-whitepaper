@@ -18,9 +18,11 @@
 \usepackage{tabularx}
 
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
 
 \title{HOOT zk distributed computing live-streaming Ðapps platform powered by Blockchain}
-\subtitle{Open Source decentralized uncensorable Network allowing anyone to rent their excess network traffic and compute, while providing a secure compute connection for those who can use it}
+\subtitle{Open Source decentralized uncensorable Network allowing anyone to rent their excess network bandwidth and compute, while providing a secure compute connection for those in need}
 \date{\today}
 \author{Hootcoin network protocol team}
 \institute{Hootcoin Foundation}
@@ -40,7 +42,7 @@
 \begin{frame}[fragile]{Hootcoin peer to peer Ðapp Network }
 
   % The \themename theme is a Beamer theme with minimal visual noise  inspired by the \href{https://github.com/hsrmbeamertheme/hsrmbeamertheme}{\textsc{hsrm} Beamer Theme} by Benjamin Weiss.
-  Hoot foundation is developing \href{https://onhoot.com/tokensale}{\textsc{Hoot Network} – an Open source software}, powering a Decentralized Network of live-streaming and distributed computing Nodes.
+  Hoot foundation is developing \href{https://onhoot.com/tokensale}{\textsc{Hoot Network} – an Open source software}, powering a Decentralized Network of live-streaming and distributed computing p2p Ðapp Nodes.
   
 
 Hoot Network acts as a marketplace, its Open Source software allows anyone to join the network both 
@@ -48,7 +50,7 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
 
 \begin{itemize}
 \item[-]as a provider – selling unused network traffic, cpu
-\item[-]or as a customer – buying live-streaming and distributing computing service
+\item[-]and as a customer – buying live-streaming and distributing computing service
 \end{itemize}
  from other Hoot Network providers. 
   % Note, that you have to have Mozilla's \emph{Fira Sans} font and XeTeX  installed to enjoy this wonderful typography.
@@ -59,7 +61,7 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
         token based, peer to peer blockchain 
   \end{verbatim}
   
-   Read our White paper for a detailed description on how the protocol will enable the creation of completely decentralized live-streaming and zk distribute computing network, powered by decentralized micro payments using Bitcoins, ETH and block-chain. 
+   Read our White paper for a detailed description on how the protocol will enable the creation of completely decentralized live-streaming and zk distributed computing network, powered by decentralized micro payments using Bitcoins, ETH and blockchain. 
 
   % \begin{verbatim}    \section{Elements}\end{verbatim}
 
@@ -67,11 +69,12 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
 \end{frame}
 \begin{frame}[t]{Centralized vs Decentralized 
 }
-  \begin{table}
-    % \caption{Largest cities in the world (source: Wikipedia)}
-    \begin{tabular}{@{} lr @{}}
-      \toprule
+    % \caption{Central vs P2P benefits (source: Crypto blockchain thesis)}
+
+	  \begin{tabularx}{\textwidth}{|Y|Y|}
+    \hline
       Facebook/Twitter & Hoot decentralized\\
+    \hline
       \includegraphics[scale=0.25]{static/cent} & \includegraphics[scale=0.25]{static/dec}\\
       \midrule
   	 Focus on Shareholder benefit  &  Focus on Network participant benefits\\
@@ -81,13 +84,13 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
  \textbf{Heavily censored}  & 	\textbf{Censorship-free}\\
 	 Not fault tolerant  & 	a dense Byzantine fault tolerant  \\
  not peer to peer & peer-to-peer network\\
-      \bottomrule
-    \end{tabular}
-  \end{table}    
+    \hline
+    \end{tabularx}
+	
 \end{frame}
 %--- Next Frame ---%
 \begin{frame}[t]{Values}
-\newcolumntype{Y}{>{\centering\arraybackslash}X}
+% \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \begin{tabularx} {\textwidth}{|Y|Y|Y|}
     \hline
   \includegraphics[scale=0.3]{static/decentnew} & \includegraphics[scale=0.3]{static/opensource} & \includegraphics[scale=0.3]{static/privacy}\\  
@@ -115,10 +118,10 @@ Infinitely Scalable, built using P2P architecture. Without single point of failu
 %--- Next Frame ---%
 
 %--- Next Frame ---%
-\begin{frame}[t]{ \includegraphics[scale=0.2]{static/hootcoin} Hoot tokens }
+\begin{frame}[t]{ Hoot tokens }
     
     
-    Decentralized hoot nodes will earn crypto-token incentives HOOT Coins 
+\includegraphics[scale=0.2]{static/hootcoin}     Decentralized hoot nodes will earn crypto-token incentives called HOOT Coins 
     
 
     \begin{itemize}
@@ -126,7 +129,6 @@ Infinitely Scalable, built using P2P architecture. Without single point of failu
     \item[-]for participating in the hoot security protocol
     \item[-]much like miners in Bitcoin and Ethereum earn token for mining the cryptocurrency in exchange for breaking complex math puzzles
     \item[-]Hoot tokens are paid API keys not securities you can redeem Hoot tokens for compute time/bandwidth on the decentralized Hoot compute network
-
     \end{itemize}
     
     
@@ -421,7 +423,28 @@ or show \textbf{bold} results.\end{verbatim}
 \end{frame}
 
 \appendix
-
+\begin{frame}[t]{Centralized vs Decentralized 
+}
+  % \begin{table}
+    % \caption{Central vs P2P benefits (source: Crypto blockchain thesis)}
+	\newcolumntype{Y}{>{\centering\arraybackslash}X}
+	    \begin{tabularx}{\textwidth}{|Y|Y|}
+    % \begin{tabular}{@{} |l|r|  @{}}
+      \toprule
+      Facebook/Twitter & Hoot decentralized\\
+      \includegraphics[scale=0.25]{static/cent} & \includegraphics[scale=0.25]{static/dec}\\
+      \midrule
+  	 Focus on Shareholder benefit  &  Focus on Network participant benefits\\
+       Your private data in everyone hands &  Your Private data is Decentralized\\
+      Simplified access to your data  &  Restricted access of your data \\
+  	 High profit margins  &  Perfect competition sets fair price\\
+ \textbf{Heavily censored}  & 	\textbf{Censorship-free}\\
+	 Not fault tolerant  & 	a dense Byzantine fault tolerant  \\
+ not peer to peer & peer-to-peer network\\
+      \bottomrule
+    \end{tabularx}
+  % \end{table}
+\end{frame}
 \begin{frame}[fragile]{Backup slides}
   Sometimes, it is useful to add slides at the end of your presentation to
   refer to during audience questions.
