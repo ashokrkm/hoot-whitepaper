@@ -1,4 +1,4 @@
-\documentclass[12pt]{beamer}
+\documentclass[11pt]{beamer}
 % \documentclass[10pt]{beamer}
 
 % \usetheme{Pittsburgh}
@@ -12,13 +12,13 @@
 
 % \usecolortheme{owl} % dark theme
 % \usecolortheme[snowy]{owl} % black on white
-\usecolortheme[cautious]{owl}% dark  wo redef colors
+\usecolortheme[cautious]{owl}% dark wo redef colors
 
 \usepackage{appendixnumberbeamer}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 % \usepackage{lmodern}
-\usepackage{tikz}   
+\usepackage{tikz}  
 
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
@@ -32,7 +32,7 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 
 \title{ Hoot revenue strategy : video AR ads using CPR model}
-\subtitle{Performant AR ads with measurable ROI  - making video ads perform using AR call-to-actions plus CPR model}
+\subtitle{Performant AR ads with measurable ROI - making video ads perform using AR call-to-actions plus CPR model}
 \date{\today}
 \author{Hoot AR ads team}
 \institute{Hoot Live inc., a Delaware C-corp}
@@ -42,25 +42,25 @@
 \maketitle
 
 % \begin{frame}{Table of contents}
-%   \setbeamertemplate{section in toc}[sections numbered]
-%   \tableofcontents[hideallsubsections]
+%  \setbeamertemplate{section in toc}[sections numbered]
+%  \tableofcontents[hideallsubsections]
 % \end{frame}
 
 % \section{Primer}
 
 \begin{frame}[fragile]{Current landscape in digital video advertising}
 	% \begin{itemize}%needs pause
-  % \setbeamercovered{transparent}%show dimmed
-  % \begin{itemize}[<+->]%uncover piecewise
-  \begin{itemize}[<+-| alert@+>]%uncover w highlight 
-	  
+ % \setbeamercovered{transparent}%show dimmed
+ % \begin{itemize}[<+->]%uncover piecewise
+ \begin{itemize}[<+-| alert@+>]%uncover w highlight 
+	 
 \item[-]current video advertising biz model is based on ROI blind CPM (cost per million impressions) pricing model
-  % \pause
+ % \pause
 \item[-]which does not provide an accurate ROI picture for advertisement buyers
-  % \pause
-\item[-]Many ad-bots end up generating fake video ad views creating uncertainty/ speculation about the actual cost, effectiveness and ROI of the ad
+ % \pause
+\item[-]Many ad-bots end up generating fake video ad views creating uncertainty/ speculation about the actual cost, effectiveness \& ROI of the ad
 % \pause
-\item[-]ad pageview ie impression is an obsolete metric lacking accountability of relevance, effectiveness and performance 
+\item[-]ad pageview or impression is an obsolete metric lacking accountability of relevance, effectiveness \& performance 
 \item[-]CPM model based on impressions earns lower revenue as there is no ROI \& users are flooded with more irrelevant video ads that do not convert
 \end{itemize}
 
@@ -71,24 +71,24 @@
 % \pause
 \item Viewers are confused as to what to do after watching video
 % \pause
-\item advertisers still pay unnecessary \$ for ad bot  and fake social-media video views
+\item advertisers still pay unnecessary \$ for ad bot \& fake social-media video views
 % \pause
-\item Viewers are not engaged enough in the video ad leading to  significant drop in engagement and subsequently sales for advertisers
+\item Viewers are not engaged enough in the video ad leading to significant drop in engagement \& subsequently sales for advertisers
 % \pause
 \item viewers do not buy the product they are forced to view on an irrelevant video ad
 \item leading to unclear ROI to advertisers top-line/bottomline
 
 \end{enumerate}
 \pause
-Video ads are still stuck in the banner ad dark ages pre-Google Adwords
+Video ads are still stuck in the  dark ages reminiscent of banner ad days pre-Google Adwords
 
 \end{frame}
 \begin{frame}[t]{Augmented Reality has its iPhone/Netscape moment}
-  \begin{itemize}[<+-| alert@+>]
+ \begin{itemize}[<+-| alert@+>]
 	\item[=]Apple 🍎
-	 iOS ARKit and Google 🤖 Android ARCore are bringing AR tech to the masses at scale
+	 iOS ARKit \& Google 🤖 Android ARCore are bringing AR tech to the masses at scale
 	% \pause
-	\item[=]Pokemon Go is an early indicator of market readiness and consumer adoption of AR tech
+	\item[=]Pokemon Go is an early indicator of market readiness \& consumer adoption of AR tech
 	% \pause
 	\item[=]Timing is just right for AR ads
 	% \pause
@@ -99,30 +99,30 @@ Video ads are still stuck in the banner ad dark ages pre-Google Adwords
 \end{frame}
 %--- Next Frame ---%
 \begin{frame}[t]{Hoot Augmented Reality ads \includegraphics[scale=.1]{static/arad/arad5}} 
-  \begin{itemize}[<+-| alert@+>]
-\item[*]interactive AR models feel  less like spammy ads and more like engaging content leading to increased viewer engagement and virality 
-% Content and Virality: 
+ \begin{itemize}[<+-| alert@+>]
+\item[*]interactive AR models feel less like spammy ads \& more like engaging content leading to increased viewer engagement \& virality 
+% Content \& Virality: 
 % \pause	
 \item[*]Augmented reality ads create great engagement with users in key ways
 % \pause
-\item[*]Personalization: users and celebrities can upload bitmoji ar avatars to become part of the ad
+\item[*]Personalization: users \& celebrities can upload bitmoji ar avatars to become part of the ad
 % \pause
 \includegraphics[scale=.15]{static/arad/bitmoji} 
 % (masquerade)
 % \pause
-\item[*]so celebrities like Rihanna can help engagement by using her avatar in an AR ad and help make it more viral 
+\item[*]so celebrities like Rihanna can help engagement by using her avatar in an AR ad \& help make it more viral 
 % \pause
-\item[*]with clear \underline{Calls to action} "Buy now" buttons can be programmatically added to the ad, eg., \emph{ Buy concert ticket to Rihanna event}
+\item[*]with clear \underline{Calls to action} "Buy now" buttons can be programmatically added to the ad, e.g., \emph{ Buy concert ticket to Rihanna event}
 \end{itemize}
 \end{frame}
 %--- Next Frame ---%
 % Big hairy audacious goal
 
-\begin{frame}[fragile]{BHAG Solution -  Building Adwords of video \includegraphics[scale=.1]{static/arad/arad5} }
+\begin{frame}[fragile]{BHAG Solution - Building Adwords of video \includegraphics[scale=.1]{static/arad/arad5} }
 \begin{itemize}[<+-| alert@+>]
 \item Interactive AR models increase viewer engagement
 % \pause	
-\item Clear, useful and engaging call to actions in video ads using AR
+\item Clear, useful \& engaging call to actions in video ads using AR after diving user-intent
 % \pause
 \item Viewers \underline{know} what action to take after watching video ad by clicking call to action buy 
 % \pause
@@ -132,7 +132,7 @@ Video ads are still stuck in the banner ad dark ages pre-Google Adwords
 % \pause
 \end{itemize}
 \pause
-Relevant \textsc{Hoot AR ads} helps usher a golden age of performant video ads like Google Adwords did to banner ads
+Relevant \textsc{Hoot AR ads} helps usher a golden age of performant video ads like Google did to banner ads through Adwords
 
 
 \end{frame}
@@ -146,7 +146,8 @@ Relevant \textsc{Hoot AR ads} helps usher a golden age of performant video ads l
 \item[*]which allows Hoot to monetize only if the consumer clicks through to advertisers call to action
 % \pause
 \item[*]and price based on a \textsc{CPR(cost per referral)} model which is not based on ineffectively measuring impressions
-\item[*]making this model ROI aware and fake impression resistant
+\item[*]making this model ROI aware \& fake impression resistant
+\item[*]This benefits advertisers as they can now see clear ROI picture for their ad-spend dollars \$
 \end{itemize}
 \end{frame}
 
@@ -154,12 +155,9 @@ Relevant \textsc{Hoot AR ads} helps usher a golden age of performant video ads l
 \begin{frame}[t]{Hoot CPR model - video Adwords economics}
 \begin{itemize}[<+-| alert@+>]
 
-\item[*]Buy actions may be completed using irreversible  \textsc{Bitcoin ETH} cryptocurrency transactions instead of tedious credit cards further reducing friction \& fraud
+\item[*]Buy actions are completed using irreversible \textsc{Bitcoin ETH} cryptocurrency txns instead of tedious credit cards further reducing friction \& fraud
 % \pause
-\item[*]This benefits advertisers as they can now see clear ROI picture for their ad-spend dollars \$
-% \pause
-\item[*]Google Adwords \& Amazon proved Conversions \& Referrals > pageviews/impressions \& eyeballs in keyword advertising \& e-commerce respectively
-% \pause
+\item[*]Google Adwords \& Amazon proved Conversions \& Referrals > pageviews \& eyeballs in keyword advertising \& e-commerce respectively
 \item[*]we want to bring this to the video ad world by ushering in CPR based performance pricing model
 % \pause
 \item[*]This benefits hoot as we can now price based on measurable effectiveness as Google was able to charge significantly more for Adwords based on performance laying foundations for a multi-billion dollar ad biz
@@ -167,26 +165,26 @@ Relevant \textsc{Hoot AR ads} helps usher a golden age of performant video ads l
 \end{itemize}
 \end{frame}
 \begin{frame}[standout]
-  Hoot AR ads Questions? - building Adwords of the web
-  \begin{tikzpicture}
-  \node (img1) {\includegraphics[height=5cm]{static/arad/arad1}};
-  % \pause
-  \node (img2) at (img1.south east) [xshift=-1cm] {\includegraphics[height=4cm]{static/arad/arad3}};
-  % \pause
-  \node (img3) at (img2.south west) [xshift=-2cm,yshift=1cm] {\includegraphics[height=4cm]{static/arad/arad2}};
-  \pause
-  \node (img4) {\includegraphics[height=2cm]{static/arad/arad4}};
-  % \pause
-  \node (img5) at (img1.south east) [yshift=-1cm] {\includegraphics[height=4cm]{static/arad/arad5}};
-  
-  \end{tikzpicture}
-  
+ Hoot AR ads Questions? - building Adwords of the web
+ \begin{tikzpicture}
+ \node (img1) {\includegraphics[height=5cm]{static/arad/arad1}};
+ % \pause
+ \node (img2) at (img1.south east) [xshift=-1cm] {\includegraphics[height=4cm]{static/arad/arad3}};
+ % \pause
+ \node (img3) at (img2.south west) [xshift=-2cm,yshift=1cm] {\includegraphics[height=4cm]{static/arad/arad2}};
+ \pause
+ \node (img4) {\includegraphics[height=2cm]{static/arad/arad4}};
+ % \pause
+ \node (img5) at (img1.south east) [yshift=-1cm] {\includegraphics[height=4cm]{static/arad/arad5}};
+ 
+ \end{tikzpicture}
+ 
 \end{frame}
 
  % \section{Description}
 
 \begin{frame}[allowframebreaks,fragile]{Hoot Performant AR video ads + measurable ROI = Building Adwords of video}
-\begin{footnotesize}
+\begin{footnotesize}%
 	\input{aradsection}
 \end{footnotesize}
 
