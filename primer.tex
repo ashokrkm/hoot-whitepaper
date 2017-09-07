@@ -16,6 +16,7 @@
 
 \usepackage{xspace}
 \usepackage{tabularx}
+\usepackage{adjustbox}
 
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
@@ -71,12 +72,16 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
 }
     % \caption{Central vs P2P benefits (source: Crypto blockchain thesis)}
 
+\centering
+\begin{adjustbox}{width=1\textwidth}
+
 	  \begin{tabularx}{\textwidth}{|Y|Y|}
     \hline
       Facebook/Twitter & Hoot decentralized\\
     \hline
       \includegraphics[scale=0.25]{static/cent} & \includegraphics[scale=0.25]{static/dec}\\
-      \midrule
+      % \midrule
+      \hline
   	 Focus on Shareholder benefit  &  Focus on Network participant benefits\\
        Your private data in everyone hands &  Your Private data is Decentralized\\
       Simplified access to your data  &  Restricted access of your data \\
@@ -86,11 +91,17 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
  not peer to peer & peer-to-peer network\\
     \hline
     \end{tabularx}
-	
+\end{adjustbox}
+
+
+
+
 \end{frame}
 %--- Next Frame ---%
 \begin{frame}[t]{Values}
 % \newcolumntype{Y}{>{\centering\arraybackslash}X}
+\centering
+\begin{adjustbox}{width=1\textwidth}
 \begin{tabularx} {\textwidth}{|Y|Y|Y|}
     \hline
   \includegraphics[scale=0.3]{static/decentnew} & \includegraphics[scale=0.3]{static/opensource} & \includegraphics[scale=0.3]{static/privacy}\\  
@@ -98,6 +109,8 @@ Decentralized & Open source & Designed for privacy\\
 Infinitely Scalable, built using P2P architecture. Without single point of failure – no central company or server.   &  All source code is always visible, empowering contributions and 100\% transparency. & Powerful encryption, Node Reputation, Layered Protection Protocols, etc.. All working to help you safely and privately participate in the Network.  \\
     \hline
 \end{tabularx}
+\end{adjustbox}
+
 \end{frame}
     
 
@@ -428,7 +441,11 @@ or show \textbf{bold} results.\end{verbatim}
 }
   % \begin{table}
     % \caption{Central vs P2P benefits (source: Crypto blockchain thesis)}
-	\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\begin{table}[ht]
+\centering
+\begin{adjustbox}{width=1\textwidth}
+
 	    \begin{tabularx}{\textwidth}{|Y|Y|}
     % \begin{tabular}{@{} |l|r|  @{}}
       \toprule
@@ -444,7 +461,8 @@ or show \textbf{bold} results.\end{verbatim}
  not peer to peer & peer-to-peer network\\
       \bottomrule
     \end{tabularx}
-  % \end{table}
+    \end{adjustbox}
+  \end{table}
 \end{frame}
 \begin{frame}[fragile]{Backup slides}
   Sometimes, it is useful to add slides at the end of your presentation to
