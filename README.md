@@ -8,6 +8,7 @@ We propose that decentralizing and democratizing compute using cryptocurrencies 
 
 ![old system](https://raw.githubusercontent.com/hootcoin/hoot-whitepaper/master/static/problem-architecture.png)
 
-![hoot system](https://raw.githubusercontent.com/hootcoin/hoot-whitepaper/master/static/hoot-solution.png)
 
 ![hoot p2p nodes](https://raw.githubusercontent.com/hootcoin/hoot-whitepaper/master/static/hoot-video-architecture-channel.png)
+
+![new hoot system](https://raw.githubusercontent.com/hootcoin/hoot-whitepaper/master/static/hoot-solution.png)
