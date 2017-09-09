@@ -6,7 +6,6 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 % \usepackage{lmodern}
-\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
 
 \usepackage{listings}
 \usepackage{float}
@@ -25,6 +24,7 @@
 \usepackage{tabularx}
 \usepackage[english, status=draft]{fixme}
 \fxusetheme{color}
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
 
 \begin{document}
 
@@ -404,6 +404,14 @@ Hootcoin token can be used for using the platform.
 
 % subsection uses_of_hoot_token (end)
 % subsection subsection_name (end)
+
+\subsection{Insuring inflation rate does not outpace growth of underlying economy}
+The sum total of all the Hootcoins coins minted at each interval can be guaranteed to be less than the calculated rate of economic growth similar to the variable bitcoin hashcash difficulty innovation, such that current token holders can be better assured that prices are not likely to inflate and that their tokens will fall below their original value because of an over-inflation of excess Hootcoin token supply.
+
+% To give an arbitrary example to illustrate this mechanism in action, imagine that the system mints new tokens daily. On day one, the market rate of 1 STC is 1 ETH. On day two, the market rate is 1 STC for 2 ETH. Because there was 100% growth, imagine 25% of the total amount of tokens in circulation are minted to capture some of that growth and distribute it fairly to the content creators who are responsible in large part for the growth of the economy. Imagine another 10% of the total amount of tokens in circulation are minted to reward the stakeholders who have staked their tokens to both vote on token distribution to content creators and to elect delegates in the delegated proof of stake (DPOS) system. Hence, 35% of the total growth is redistributed to those providing valuable services to the network, and 65% is retained. This is a system that has been pioneered and proven to function well by platforms such as Steem<sup>[5]</sup>, which has over 100,000 daily unique visitors<sup>[31]</sup> and extremely rapid user growth directly incentivized by such an ecosystem.
+
+A further percentage of the growth can be retained as explained above to provide a price floor as an assurance of value maintenance to Hootcoin token holders. 
+% Imagine another 15% of total tokens are minted, exchanged as volume becomes available at the current market value of 1 STC for 2 ETH, and then established as a price floor at the last measured price of 1 STC for 1 ETH. On the next day, when coins are scheduled to be minted again, all existing coins in the price floor fund can updated to sell at the new price floor price - in this case, at the price of 1 STC for 2 ETH. In this scenario, 50% of total growth is repurposed to help grow the network and provide benefits within the ecosystem, and 50% is retained.
 
 \section{Hootcoin Development Timeline}
 The Hoot consumer mobile app which uses Facebook or Twitter to authenticate is already live in the iTunes AppStore\footnote{Hoot live on iOS AppStore https://appsto.re/us/40RS-.i} and Google Android Play Store\footnote{Hoot Live on Google Playstore https://play.google.com/store/apps/details?id=com.onhoot.android}.
