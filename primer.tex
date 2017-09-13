@@ -18,11 +18,11 @@
 
 \usepackage{xspace}
 \usepackage{tabularx}
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
 \usepackage{adjustbox}
 
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
-\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
 
 \title{HOOT zk distributed computing video protocol Ðapps platform powered by Blockchain}
 \subtitle{Open Source decentralized uncensorable network allowing anyone to rent their excess network bandwidth \& compute, while providing a secure compute connection for those in need}
@@ -101,23 +101,14 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
 %--- Next Frame ---%
 \begin{frame}[t]{HootGPUcoin Values}
 % \newcolumntype{Y}{>{\centering\arraybackslash}X}
-\centering
-\begin{adjustbox}{width=1\textwidth}
-\begin{tabularx} {\textwidth}{|Y|Y|Y|}
- \hline
- \includegraphics[scale=0.3]{static/decentnew} & \includegraphics[scale=0.3]{static/opensource} & \includegraphics[scale=0.3]{static/privacy}\\ 
-Decentralized & Open source & Designed for privacy\\
-Infinitely Scalable, built using P2P architecture. Without single point of failure – no central company or server. & All source code is always visible, empowering contributions \& 100\% transparency. & Powerful encryption, Node Reputation, Layered Protection Protocols, etc.. All working to help you safely \& privately participate in the Network. \\
- \hline
-\end{tabularx}
-\end{adjustbox}
+\input{values-table}
 
 \end{frame}
  
 
 \begin{frame}[t]{Evolution of internet \& crypto currencies}
  
-\include{evolution-table} 
+\input{evolution-table} 
 \end{frame} 
  
 \begin{frame}[t]{IPCN: Interplanetary Compute Network}
