@@ -66,18 +66,18 @@ Virtually none of the ideas underpinning Bitcoin are new. They can all be traced
  Satoshi Nakamoto's achievement lays in the complex, ingenious way in which he (or she, or they) combined these ideas into a new distributed algorithm\footnote{http://queue.acm.org/detail.cfm?id=3136559}.
  
 \input{evolution-table}
- 
 
- Firefox, Chrome and IE have dominated the centralized web. decentralized technologies such as Blockstack are ushering in the auspicious beginnings of decentralized web. 
- We are now entering a new era of decentralized applications, blockchain technologies collectively known as Web 3.0. In the centralized web, the users are the product, their interests, preferences are sliced and diced by companies such as Facebook, Twitter and Google and sold to advertisers, enriching their small group of shareholders driven by profit, with significant barriers to entry. In the
+Firefox, Chrome and IE have dominated the centralized web. decentralized technologies such as Blockstack are ushering in the auspicious beginnings of decentralized web. 
+We are now entering a new era of decentralized applications, blockchain technologies collectively known as Web 3.0. In the centralized web, the users are the product, their interests, preferences are sliced and diced by companies such as Facebook, Twitter and Google and sold to advertisers, enriching their small group of shareholders driven by profit, with significant barriers to entry. In the
 decentralized web, the user information is private and value creation is not about advertisements and shareholder enrichment only. Decentralized
 technologies such as Status, Toshi and Hoot empower the network token holders, who can have many motivations other than mere profit, including privacy, altruism and a more inclusive distribution of control and information. The emergence of bitcoin and subsequent blockchain technologies has generated a new digital asset class in which scarcity is based on mathematical properties and equations rebalancing variables to maximize economic inclusivity and activity. Through cryptographic verification and game-theory based equilibrium, blockchain-based digital assets can be created, issued, and transmitted using software. Ownership of these cryptographic digital assets can be easily verified using public key cryptography and transfer of ownership maintained in an immutable decentralized distributed database ledger known as the blockchain. This lays the foundation for democratic transfer of value among entities in the decentralized web.
- We are in the very early big-bang stages of the crypto-currency decentralized web revolution on blockchain and several miracles are happening everyday harkening to the early merry days of web 1.0.
+We are in the very early big-bang stages of the crypto-currency decentralized web revolution on blockchain and several miracles are happening everyday harkening to the early merry days of web 1.0.
 
 \section{Motivation - design goals}
 In our development of Hoot, we aspire to address four problems with live streaming and compute over blockchain:
 \begin{itemize}
 \item[-]Entertainment systems are designed to benefit the select few in Hollywood, most artists, musicians and creators have little or no access to the monetary benefits of their own creations.
+\item[-]internet service providers such as AT\&T, Comcast and verizon slow down or block any content, applications or websites you may use
 \item[-]Most video and live systems are centralized subject to central censorship, leading to citizens unwilling or unable to share their free speech openly
 \item[-]As the systems to deploy video and live are expensive and centralized there has been a significant lack of innovation.
 \item[-]Monetization systems are also very rudimentary with annoying intrusive advertisements that are hard to avoid during video experiences. 
@@ -87,13 +87,14 @@ In our development of Hoot, we aspire to address four problems with live streami
 We believe a more egalitarian and democratic open Hoot GPUcoin marketplace is the panacea to many of the problems the old systems fail to address:
 \begin{itemize}
 \item[+]By giving creators a way to monetize their own creations on Hoot, we empower them to create, trusting the open decentralized marketplace to fairly compensate them over archaic centralized controlled channels.
+\item[+]\textbf{Net Neutrality}: we strongly support and believe in net neutrality and by design the hoot GPUCoin decentralized net prevents any form of throttling, blocking or slowing down content.
 \item[+]By making the video system decentralized and uncensorable, Hoot promotes citizen free speech without risk of detection and censorship
 \item[+]By making video and compute systems more expressive we plan to make video systems democratic and uncensorable, leading to an unleashing of video innovation on the open decentralized web.
 
 \item[+]By making the platform opensource and decentralized over the blockchain, creators can price their content and accept cryptocurrencies in place of intrusive advertisements which only benefit centralized systems such as facebook, making this a more seamless experience for end consumers. Since cryptocurrencies do not need to be issued by a central authority, financial means of control to censor content is made irrelevant. Blocking a payment channel is a common means of censorship e.g., the paypal banking account belonging to Wikileaks was blocked by various central controlling organizations.
 \end{itemize}
 
-\fxerror{need to combine all problems or delete $2/3$}
+% \fxerror{need to combine all problems or delete $2/3$}
 
 \subsection{Customer Business Problem}
 The consumer world is ready for mobile live broadcasting. Participation in a live-stream is the next big wave and future of interactive live TV. Facebook serves about 8 Billion video views a day and Snapchat about 10 Billion. Current mobile live-steaming apps do not deliver true real-time, failing in typical real world mobile use cases where high bandwidth and battery usage is unacceptable. Consumers also lose their memorable moments as the live-streams are ephemeral. eSports such as \emph{Dota2} are very popular among gamers and live-streaming audiences alike. The e-sporting events constantly draw audiences in the millions comparable to live football and baseball sporting events. Being able to stream to millions of viewers with near zero latency and HD quality has been a huge challenge for the existing CDN based live-streaming systems.
@@ -104,7 +105,7 @@ built from the ground up to offer live-streaming of mobile games and eSports, fo
 
 % \section{Mission}
 % Hoot Mission
-% \fxerror*{need to enter hoot mission or delete}
+% \fxerror*{need to enter Hoot mission or delete}
 %
 % \section{Vision}
 % Hoot Vision
@@ -117,11 +118,11 @@ We are monitoring the ERC223 token standard proposal\footnote{https://github.com
 \section{Choice of Blockchain}
 The seed protocol will run on top of the ethereum blockchain protocol which makes the decentralized app abstraction. 
 
-\fxerror*{need to edit}
+% \fxerror*{need to edit}
 
 %\sout{from tezos need to edit}
 
-Hoot can instantiate any blockchain based protocol. Its seed protocol specifies a procedure for stakeholders to approve amendments to the protocol, \emph{including} amendments to the amendment procedure itself. Upgrades to Hoot-coin network are staged through a testing environment to allow stake-holders to recall potentially problematic amendments. We believe that proof of stake blockchains are lighter alternatives to proof of work blockchains such as Bitcoin and ethereum, as the proof of work blockchains tend to have exponentially increasing CPU mining requirements as the number of participants keep growing and bringing on more compute to the network.
+Hoot can instantiate any blockchain based protocol. Its seed protocol specifies a procedure for stakeholders to approve amendments to the protocol, \emph{including} amendments to the amendment procedure itself. Upgrades to Hoot GPUCoin network are staged through a testing environment to allow stake-holders to recall potentially problematic amendments. We believe that proof of stake blockchains are lighter alternatives to proof of work blockchains such as Bitcoin and ethereum, as the proof of work blockchains tend to have exponentially increasing CPU mining requirements as the number of participants keep growing and bringing on more compute to the network.
 
 
 \section{Technical Problem \& solution}
@@ -159,7 +160,7 @@ These are the drawbacks with current live-streaming system:
 \end{itemize}
 
 \subsection{Hoot-coin Solution / Hoot Network Solution/ Hoot Solution}
- \fxerror{fix name for everything Hoot-coin network, Hoot GPUcoin Token, Hoot GPUcoin protocol team, Hoot GPUcoin Foundation need right names for all and replace all }.
+ % \fxerror{fix name for everything Hoot GPUCoin network, Hoot GPUcoin Token, Hoot GPUcoin protocol team, Hoot GPUcoin Foundation need right names for all and replace all }.
 
 \begin{figure}[h!]
  \centering
@@ -203,7 +204,7 @@ When compared to other products on the market, Hoot has several defensible advan
 \section{Traction \& Usage}
 A mobile consumer application is currently live on the iOS AppStore and Google Playstore. Hoot has received streams from 
 
-\fxerror*{put right numbers}
+% \fxerror*{put right numbers}
 
 Tables \ref{table:1} and \ref{table:2} show the usage statistics.
 
@@ -255,7 +256,7 @@ Total Time Watched & 37k days or 100 years \\
 \iffalse
 \section{Low Latency Streaming Technology}
 \fxerror{maybe not needed}
-How hoot powers low latency streaming.
+How Hoot powers low latency streaming.
 \fi
 
 \input{hoot-architecture}
@@ -272,7 +273,7 @@ Anonymity and privacy are key to enable free speech, and this matters more in co
 designed to route video streams and meta data over VPN and optionally Tor network to avoid censorship and promote free speech.
 
 \section{Hoot Monetizing Engine}
-Hoot GPUcoin tokens based on cryptocurrency technology power the Hoot marketplace and economy. Hoot miners earn Hoot GPUcoin tokens running their own open source decentralized hoot nodes utilizing the unused networking bandwidth and compute capacity they may have. In countries where censorship is an issue they may run decentralized hoot nodes with Tor/VPN modules enabled so they can support free speech through hoot live-streaming. Hoot GPUcoin tokens can also be used by viewers to support their favorite artists, musicians and gamers. They may send Hoot GPUcoin tokens to the streamers they love watching and for events that they want to support. Streamers can also earn Hoot GPUcoin tokens by enabling subscriptions in order to have a dependable source of recurring revenue. This enables them to make a living off their fan base from the comfort of where they are at their best without having to spend for event space and the complicated offline co-ordinating schemes needed to assemble all their fan base for their events.
+Hoot GPUcoin tokens based on cryptocurrency technology power the Hoot marketplace and economy. Hoot miners earn Hoot GPUcoin tokens running their own open source decentralized Hoot nodes utilizing the unused networking bandwidth and compute capacity they may have. In countries where censorship is an issue they may run decentralized Hoot nodes with Tor/VPN modules enabled so they can support free speech through Hoot live-streaming. Hoot GPUcoin tokens can also be used by viewers to support their favorite artists, musicians and gamers. They may send Hoot GPUcoin tokens to the streamers they love watching and for events that they want to support. Streamers can also earn Hoot GPUcoin tokens by enabling subscriptions in order to have a dependable source of recurring revenue. This enables them to make a living off their fan base from the comfort of where they are at their best without having to spend for event space and the complicated offline co-ordinating schemes needed to assemble all their fan base for their events.
 
 For micro-payments, artists can safely accept the HootLiveCoin payment immediately. The size of the payment is too small for the effort to steal it. Micro-payments are almost always for intellectual property, where there is no physical loss to the merchant.
 
@@ -291,7 +292,7 @@ We envision an Augmented Reality first OS, an operating system native to virtual
 \sout{Some interesting machine-learning and ai ideas are Label Detection(Detect entities within the video, such as "dog", "flower" or "car"), Shot Change Detection (Detect scene changes within the video), Regionalization (automagically specify a region where processing will take place), automated subtitle detection, Home and office security and others yet to be discovered.} 
 
 \subsection{Un-censorable P2P identity and reputation blockchain}
-Since there is an economy of trading in the marketplace of the Hoot-coin network, having a peer to peer identity and reputation database to enable seamless, non-custodial decentralized, trust-free interactions becomes essential. Users/Agents may be identified using Civic, UPort, or what the Decentralized Identity Foundation \footnote{http://identity.foundation} is building. Feedback and reviews as well as point scoring out of a maximum of 5 and minimum of 1 for quality of interactions factor into an agents reputation trust score. The trust score of each agent is hashed into the blockchain using their public GPG key and hashed username or decentralized identity so as to make them un-censorable. Trust score and reviews may only be added by anyone to the database and nothing can ever be removed making this the trust reputation blockchain. \emph{Merkle trees}, an efficient verifiable data-structure, is used to ensure the reputation db is usable by downloading the relevant sub-tree for a particular user sub-network hash even as the reputation blockchain grows very large in size as the network grows exponentially.
+Since there is an economy of trading in the marketplace of the Hoot GPUCoin network, having a peer to peer identity and reputation database to enable seamless, non-custodial decentralized, trust-free interactions becomes essential. Users/Agents may be identified using Civic, UPort, or what the Decentralized Identity Foundation \footnote{http://identity.foundation} is building. Feedback and reviews as well as point scoring out of a maximum of 5 and minimum of 1 for quality of interactions factor into an agents reputation trust score. The trust score of each agent is hashed into the blockchain using their public GPG key and hashed username or decentralized identity so as to make them un-censorable. Trust score and reviews may only be added by anyone to the database and nothing can ever be removed making this the trust reputation blockchain. \emph{Merkle trees}, an efficient verifiable data-structure, is used to ensure the reputation db is usable by downloading the relevant sub-tree for a particular user sub-network hash even as the reputation blockchain grows very large in size as the network grows exponentially.
 
 \subsection{Multi-sig escrow wallets}
 Hoot GPUcoin tokens are first sent to a multi-sig escrow wallet, that is controlled by the buyer/viewer, seller/streamer and an independent third-party escrow. Any two out of the three parties need to sign in order for the transaction to be completed. Also the number of times the buyer or seller necessitates escrow agents to mediate a dispute and the time to complete a transaction will factor into the reputation of the buyer and seller. Any trusted agent with a high enough reputation score can register to be an independent third party escrow agent. Escrow agents also earn feedback and trust which are hashed and stored in the blockchain using their public GPG key and hashed username so it becomes un-censorable.
@@ -302,7 +303,7 @@ To bootstrap the network, Hoot network will run Vickrey auctions to find the bes
 Hoot can instantiate any auction protocol, if they find a suitable auction protocol that is superior to Vickrey. Its seed protocol specifies a procedure for stakeholders to approve amendments to the auction protocol,
 \emph{including} amendments to the auction amendment procedure itself. Upgrades to Hoot auction protocol are staged through a testing environment to allow stake-holders and token-holders to recall potentially inferior amendments, that lead to sub-optimal pricing for network stakeholders. 
 
-Since the Hoot-coin network can also be used for other tasks than streaming live video, the network can be extended to run any computing task such as computer graphics, business applications, machine learning, cryptography, malware prevention analysis, science and services, making the Hoot network a Uber for computers, enabling miners to rent their unused CPU/GPU cycles and get paid in Hoot cryptocurrency. Hence the Hoot decentralized network powers true cloud computing.
+Since the Hoot GPUCoin network can also be used for other tasks than streaming live video, the network can be extended to run any computing task such as computer graphics, business applications, machine learning, cryptography, malware prevention analysis, science and services, making the Hoot network a Uber for computers, enabling miners to rent their unused CPU/GPU cycles and get paid in Hoot cryptocurrency. Hence the Hoot decentralized network powers true cloud computing.
 
 \subsection{Cryptocurrency And Issuance}
 
@@ -317,7 +318,7 @@ The issuance model will be as follows:
 \end{itemize}
 
 \subsection{Hoot-coin carbon footprint, mining, scarcity and profitability}
-Bitcoin has made cryptocurrencies popular and brought it to the mainstream, but it has a dark side, its ever increasing carbon footprint. In late 2013, 8.25 megatons (8,250,000 tonnes) of CO$_2$ per year was estimated to be the carbon footprint of Bitcoin per year\footnote{https://pando.com/2013/12/16/bitcoin-has-a-dark-side-its-carbon-footprint/}. In August 2017, One Bitcoin transaction uses enough energy to power 5.58 US households for 1 day and the Bitcoin network consumes 30 times more energy than the VISA network \footnote{https://digiconomist.net/bitcoin-energy-consumption}. These computers are consuming so much electricity that it’s already unprofitable to mine in some regions of the world. Since excess bandwidth and compute capacity is utilized towards streaming, encoding, object recognition and security of video and audio streams the resources otherwise would be utilized are profitably used. Since Hoot GPUcoin tokens are fairly distributed to miners corresponding to their compute and bandwidth availability irrespective of how much CPU they control, the Hoot-coin carbon footprint will be exponentially lower than the Bitcoin network which depends on continuously increasing complexity of the hashing required for mining. Since Hoot GPUcoin tokens can only be mined or acquired from the platform, they will tend to be a scarce token.
+Bitcoin has made cryptocurrencies popular and brought it to the mainstream, but it has a dark side, its ever increasing carbon footprint. In late 2013, 8.25 megatons (8,250,000 tonnes) of CO$_2$ per year was estimated to be the carbon footprint of Bitcoin per year\footnote{https://pando.com/2013/12/16/bitcoin-has-a-dark-side-its-carbon-footprint/}. In August 2017, One Bitcoin transaction uses enough energy to power 5.58 US households for 1 day and the Bitcoin network consumes 30 times more energy than the VISA network \footnote{https://digiconomist.net/bitcoin-energy-consumption}. These computers are consuming so much electricity that it’s already unprofitable to mine in some regions of the world. Since excess bandwidth and compute capacity is utilized towards streaming, encoding, object recognition and security of video and audio streams the resources otherwise would be utilized are profitably used. Since Hoot GPUcoin tokens are fairly distributed to miners corresponding to their compute and bandwidth availability irrespective of how much CPU they control, the Hoot GPUCoin carbon footprint will be exponentially lower than the Bitcoin network which depends on continuously increasing complexity of the hashing required for mining. Since Hoot GPUcoin tokens can only be mined or acquired from the platform, they will tend to be a scarce token.
 
 \section{The Foundation and Governance} % (fold)
 \label{sec:the_foundation_and_governance}
@@ -349,13 +350,13 @@ The Hoot GPUcoin Foundation will fund the development of the Hoot Live Stream Pl
 \hline
 Channels & Percentage & Lock up Period \\
 \hline
-30,000,000 HOOT Hoot GPUcoin Token Sale (HTS) & 30\% & Token Sale - Launch 22nd September 2017. The initial funding will be used to develop a working prototype, financial setup, legal fees and promotion.
+30,000,000 Hoot Hoot GPUcoin Token Sale (HTS) & 30\% & Token Sale - Launch 22nd September 2017. The initial funding will be used to develop a working prototype, financial setup, legal fees and promotion.
  \\
  \hline
-30,000,000 HOOT Additional Hoot GPUcoin Token Sale (AHTS) & 30\% & Additional Hoot GPUcoin Token Sale. On the release of a successful prototype, a second token sale will be launched to fund the full production ready launch and development of all relevant technology and organization matters.
+30,000,000 Hoot Additional Hoot GPUcoin Token Sale (AHTS) & 30\% & Additional Hoot GPUcoin Token Sale. On the release of a successful prototype, a second token sale will be launched to fund the full production ready launch and development of all relevant technology and organization matters.
 \\
 \hline
-20,000,000 HOOT Retained by the Foundation as Treasury & 20\% & 100\% of which locked for 24 months.Strategic Planning, Project Support, Token Swap, Emergency Fund, Development \& Legal Fees - These will be subject to a 2 year lock-up. Subsequent to the lock-up, these will be used for various development and operation costs of Hoot Platform over 2 further years.
+20,000,000 Hoot Retained by the Foundation as Treasury & 20\% & 100\% of which locked for 24 months.Strategic Planning, Project Support, Token Swap, Emergency Fund, Development \& Legal Fees - These will be subject to a 2 year lock-up. Subsequent to the lock-up, these will be used for various development and operation costs of Hoot Platform over 2 further years.
 \\
 \hline
 20,000,000 Hoot GPUcoin Advisors, Directors and Early Backers & 20\% & 70\% of which is locked for 12 months. 30\% of which is locked up for 24 months. Distributed to the directors, advisors, and early backers of the
@@ -435,17 +436,17 @@ of the live-streams.
 \subsection{Tor and VPN to enable uncensorable live-streaming }
 Tor modules to live-stream video over the onion routed tor network needs to be built. Integration with VPN needs to be built in order to evade censorship. This would enable true zero knowledge live-streams and computing in countries where censorships and free speech continue to be ongoing human rights issues.
 
-The underlying hoot technology may also be used to build an open source low cost security and surveillance alternative to closed systems such as Nest.
+The underlying Hoot technology may also be used to build an open source low cost security and surveillance alternative to closed systems such as Nest.
 
 \subsection{Focus on Performance}
-We have a strong focus on performance and highly performant applications while still maintaining smaller binary sizes and code integrity. The hoot iOS app is under 10MB, the latency is under a second plus the network latency. This leads to a superior user experience and efficient usage of unused compute.
+We have a strong focus on performance and highly performant applications while still maintaining smaller binary sizes and code integrity. The Hoot iOS app is under 10MB, the latency is under a second plus the network latency. This leads to a superior user experience and efficient usage of unused compute.
 
 \section{Uber for Computers creating IPCN - Interplanetary compute network}
 Hoot GPUcoin network is a dense Byzantine fault tolerant peer-to-peer network - creating the worlds first IPCN - Interplanetary compute network. Hoot GPUcoin Network is based on a complex architecture revolving around P2P, Blockchain, Smart Contracts, State Channels. Hoot GPUcoin network protocol will enable the creation of decentralized compute network, powered by decentralized cryptocurrency micro-payments. This leads to Uber for computers helping create the worlds first IPCN an interplanetary compute network. We will create a platform to create new compute primitives using any turing compute programming language. We will use container technologies such as docker and kubernetes to efficiently distribute and use excess unused compute. The compute results of the network are verifiable using cryptographic and mathematical properties of the cryptographic design. The IPCN takes advantage of the coming cambrian explosion of computing, cryptocurrencies and CPU/GPU miners.
 
 
 \section{Conclusion}
-Bet on the future with Hoot live-streaming protocol.
+Bet on the future with Hoot live-streaming protocol using GPUCoin for mining.
 
 
 % \renewcommand{\lstlistingname}{Appendix}
