@@ -6,9 +6,4 @@ Hoot GPUcoin aims to build a web scale cryptographically secure distributed comp
 
 We propose that decentralizing and democratizing compute using cryptocurrencies and making it uncensorable using blockchain has net positive effects on the world 
 
-![old system](https://raw.githubusercontent.com/hootcoin/hoot-whitepaper/master/static/problem-architecture.png)
-
-
-![hoot p2p nodes](https://raw.githubusercontent.com/hootcoin/hoot-whitepaper/master/static/hoot-video-architecture-channel.png)
-
-![new hoot system](https://raw.githubusercontent.com/hootcoin/hoot-whitepaper/master/static/hoot-solution.png)
+![new GPUCoin IPCN system](https://github.com/hootcoin/hoot-whitepaper/blob/master/static/gpucoin-solution-trans-ai.png?raw=true)
