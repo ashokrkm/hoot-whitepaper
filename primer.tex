@@ -1,4 +1,5 @@
-\documentclass[10pt]{beamer}
+% \documentclass[10pt]{beamer}
+\documentclass[10pt,handout]{beamer}
 
 % \usetheme{Pittsburgh}
 \usetheme{metropolis}%great
@@ -20,6 +21,7 @@
 
 \usepackage{booktabs}
 \usepackage[scale=2]{ccicons}
+\usepackage{textcomp}
 
 % \usepackage{pgfplots}
 % \usepgfplotslibrary{dateplot}
@@ -32,7 +34,7 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 \newcolumntype{Y}{>{\centering\arraybackslash}X}
 
-\title{HOOT zk distributed computing future proof video protocol Ðapps platform powered by cryptocurrency Blockchain}
+\title{GPUCoin zk distributed computing future proof video protocol Ðapps platform powered by cryptocurrency Blockchain}
 \subtitle{Open Source decentralized uncensorable network allowing anyone to rent their excess bandwidth \& GPU compute, while providing a secure compute connection for those in need}
 \date{\today}
 \author{Hoot GPUcoin network protocol team}
@@ -50,23 +52,23 @@
 
 \section{Primer}
 
-\begin{frame}[fragile]{Hoot GPUcoin peer to peer Ðapp Network }
+\begin{frame}[fragile]{GCN GPUcoin peer to peer Ðapp Network }
 
  % The \themename theme is a Beamer theme with minimal visual noise inspired by the \href{https://github.com/hsrmbeamertheme/hsrmbeamertheme}{\textsc{hsrm} Beamer Theme} by Benjamin Weiss.
- Hoot foundation is developing \href{https://onhoot.com/tokensale}{\textsc{Hoot GPUCoin Network} – an Open source software}, powering a Decentralized Network of live-streaming \& distributed computing p2p Ðapp Nodes.
+ GPUCoin foundation is developing \href{https://onhoot.com/tokensale}{\textsc{GPUCoin Network} – an Open source software}, powering a Decentralized Network of live-streaming \& distributed computing p2p Ðapp Nodes.
  
 
-Hoot Network acts as a marketplace, its Open Source software allows anyone to join the network both 
+GCN GPUCoin Network acts as a marketplace, its Open Source software allows anyone to join the network both 
  % \begin{verbatim} % \end{verbatim}
 
 \begin{itemize}
 \item as a provider – selling unused network traffic, GPU, CPU
 \item as a customer – buying live-streaming \& distributing computing service
 \end{itemize}
- from other Hoot GPUCoin Network providers. 
+ from other GPUCoin GCN Network providers. 
 \end{frame}
-\begin{frame}[fragile]{Hoot peer to peer Network }
- Hoot GPUcoin Network is based on a complex architecture revolving around P2P, Blockchain, Smart Contracts, State Channels, etc\ldots
+\begin{frame}[fragile]{GPUCoin peer to peer Network }
+GPUcoin GCN Network is based on a complex architecture revolving around P2P, Blockchain, Smart Contracts, State Channels, etc\ldots
  \begin{verbatim} 
  token based, peer to peer blockchain 
  \end{verbatim}
@@ -107,7 +109,7 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
 
 \end{frame}
 %--- Next Frame ---%
-\begin{frame}[t]{Hoot GPUcoin Values}
+\begin{frame}[t]{ GPUcoin Values}
 % \newcolumntype{Y}{>{\centering\arraybackslash}X}
 \input{values-table}
 
@@ -122,13 +124,13 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
  \input{ipcn-frame}
 % \begin{frame}[t]{IPCN: Interplanetary Compute Network}
 % 	\includegraphics[scale=.3]{static/ipcn-p2p} Uber/Airbnb for computers
-%  \begin{itemize}
-%  \item architecture revolving around fault tolerant redundant P2P, Blockchain, Smart Contracts, State Channels
-%  \item a platform to create new compute primitives using any turing compute programming language
-%  \item use container technologies such as docker \& kubernetes to efficiently distribute \& use excess unused compute
-%  \item powered by cryptocurrency micro-payments
-%  \item compute results verifiable using cryptographic \& mathematical properties
-%  \end{itemize}
+% \begin{itemize}
+% \item architecture revolving around fault tolerant redundant P2P, Blockchain, Smart Contracts, State Channels
+% \item a platform to create new compute primitives using any turing compute programming language
+% \item use container technologies such as docker \& kubernetes to efficiently distribute \& use excess unused compute
+% \item powered by cryptocurrency micro-payments
+% \item compute results verifiable using cryptographic \& mathematical properties
+% \end{itemize}
 % \end{frame}
 \input{gpucoin-tokens-frame}
 %--- Next Frame ---%
@@ -138,7 +140,7 @@ Hoot Network acts as a marketplace, its Open Source software allows anyone to jo
 \begin{frame}{Summary}
 
 \includegraphics[scale=.4]{static/ipcn-p2p}
-IPCN Get the Hoot GPUcoin tokens from
+IPCN™\textsuperscript{TM} Get the GPUcoin GPC tokens from
 \includegraphics[scale=0.4]{static/hootcoin} 
  \begin{center}\url{http://onhoot.com/tokensale}\end{center}
 
@@ -271,19 +273,19 @@ or show \textbf{bold} results.\end{verbatim}
  \begin{tikzpicture}
  \def\couleur{alerted text.fg}
  \path[coordinate] (0,0) coordinate(A)
-   ++( 90:5cm) coordinate(B)
-   ++(0:5cm) coordinate(C)
-   ++(-90:5cm) coordinate(D);
+  ++( 90:5cm) coordinate(B)
+  ++(0:5cm) coordinate(C)
+  ++(-90:5cm) coordinate(D);
  \draw[fill=\couleur!\thedensity] (A) -- (B) -- (C) --(D) -- cycle;
  \foreach \x in {1,...,40}{%
-  \pgfmathsetcounter{density}{\thedensity+20}
-  \setcounter{density}{\thedensity}
-  \path[coordinate] coordinate(X) at (A){};
-  \path[coordinate] (A) -- (B) coordinate[pos=.10](A)
-    -- (C) coordinate[pos=.10](B)
-    -- (D) coordinate[pos=.10](C)
-    -- (X) coordinate[pos=.10](D);
-  \draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;
+ \pgfmathsetcounter{density}{\thedensity+20}
+ \setcounter{density}{\thedensity}
+ \path[coordinate] coordinate(X) at (A){};
+ \path[coordinate] (A) -- (B) coordinate[pos=.10](A)
+  -- (C) coordinate[pos=.10](B)
+  -- (D) coordinate[pos=.10](C)
+  -- (X) coordinate[pos=.10](D);
+ \draw[fill=\couleur!\thedensity] (A)--(B)--(C)-- (D) -- cycle;
  }
  \end{tikzpicture}
  \caption{Rotated square from
