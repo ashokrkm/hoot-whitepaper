@@ -14,7 +14,7 @@
 
 % \usecolortheme{owl} % dark theme
 % \usecolortheme[snowy]{owl} % black on white
-% \usecolortheme[cautious]{owl}% dark wo redef colors
+\usecolortheme[cautious]{owl}% dark wo redef colors
 
 \usepackage{appendixnumberbeamer}
 \usepackage[T1]{fontenc}
@@ -54,7 +54,7 @@
 
 \section{Primer}
 
-% {\usebackgroundtemplate{\includegraphics[width=\paperwidth]{static/supernova}}
+{\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{static/supernova}}%supernova %space-settle %globe-ai
 
 \begin{frame}[fragile]{GCN GPUcoin peer to peer Ðapp Network }
 
@@ -71,7 +71,7 @@ GCN GPUCoin Network acts as a marketplace, its Open Source software allows anyon
 \end{itemize}
  from other GPUCoin GCN Network providers. 
 \end{frame}
-% }
+}%uncomment for usebackgroundtemplate
 %--- Next Frame ---%
 \begin{frame}[fragile]{GPUCoin peer to peer Network }
 GPUcoin GCN Network is based on a complex architecture revolving around P2P, Blockchain, Smart Contracts, State Channels, etc\ldots
@@ -160,10 +160,12 @@ IPCN™\textsuperscript{TM} Get the GPUcoin GPC tokens from
  \begin{center}\ccbysa\end{center}
 
 \end{frame}
+{\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{static/supernova}}%supernova %space-settle %globe-ai
 
 \begin{frame}[standout]
  Questions?
 \end{frame}
+}%uncomment for usebackgroundtemplate
 
 
 \end{document}
