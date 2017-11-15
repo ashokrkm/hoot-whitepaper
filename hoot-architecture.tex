@@ -3,7 +3,7 @@
 \includegraphics[scale=0.5]{static/hoot-video-architecture-channel-trans}
 
 \subsection{Broadcast Side - mobile iOS client}
-Hoot protocol for realtime livestreaming video is called Real time Hoot protocol[\textbf{RTSSP}].
+The protocol for realtime livestreaming video is called Real-Time Satoshi Streaming Protocol[\textbf{RTSSP}].
 Video frames are captured at a resolution of 540x960 to 720x1280 based on network connectivity. Audio stream is captured using the built in iOS device microphone at a sampling rate of 44.1 KHz. Optionally, real time filters (Black and White, Glow, Fisheye, Sepia) can be applied to captured video frames in real-time. Video and audio are encoded using the native hardware H.264(H.265 in android) and AAC encoders, respectively. The video frames are encoded using a VBR algorithm with a maximum bitrate of 1 Mbps, this can be increased for usecases such as VR streaming. Audio stream is encoded in AAC format with a bitrate of 128 Kbps. The H.264 + AAC stream is encoded into an RTSSP stream and is transmitted to Hoot RTSSP server.
 
 \subsection{Broadcast Side — Desktop Mac client}
