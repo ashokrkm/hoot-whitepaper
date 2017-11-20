@@ -65,18 +65,6 @@ A peer-to-peer hyper-stream protocol that makes live-streaming \& distributed co
 Before discussing Proof of Compute \& Proof of Streaming, GPUCoin's innovative technique for distributing coins, let’s review GPU accelerated computing at a high level.
 \input{gpu}
 
-\subsection{History of Live-Streaming}
-Over the last half a century, people have been fascinated by live video. On September 4, 1951, Harry Truman spoke at the Japanese Peace Treaty Conference in San Francisco and, this was the worlds first live broadcast. Four months later, The Today Show would become the first broadcast news program airing live in the United States. Since then, we have loved live video, from our favorite news stations to our guilty pleasures of reality television.
-
-\iffalse
-\sout{Streaming is a lot older in its origins than one might intuitively suppose. One of the earliest streaming platforms was Muzak. This along with similar audio systems played continuous music. When we think of streaming, though, we think computers \& the Internet. The full development of that capacity was more recent. Many technical advances in the 1990s \& 2000s improved the bandwidth of networks. This increased the number of people \& computers with access to those networks, creating the Internet as we know it today. Standard formats were also developed \& protocols that we use to code online material \& functions (TCP/IP, HTTP, HTML, etc.).}
-\fi
-
-As the bandwidth of connections to the Internet \& computing power available to the average person continued to increase, it was natural that the audio streaming used by Internet radio would graduate to streaming video. Data compression methods contributed a lot to this development as well. Video files contain a lot of information. Compression allows that information to be efficiently transmitted \& stored.
-
-\subsection{Live-Streaming versus On-Demand Streaming}
-The term “live-streaming” is sometimes applied where it doesn’t belong. Streaming from a recorded source, which is what one finds on YouTube, Netflix, \& many other commercial streaming sources, is on-demand streaming. This means that the user can watch the content at will, while live-streaming occurs only at the moment, in real-time. Live streaming comes from a content source such as video cameras and microphones. It is made available at the same time as the event being filmed occurs. On-demand streaming provides content from a recorded source instead. Streaming radio \& much Internet television consists of live-streaming. As far as the “streaming” portion of the process is concerned, live \& on-demand streaming are similar from the viewer’s perspective. They are quite different in technical \& procedural details from the standpoint of the producer or broadcaster, though. The main difference from a technical end is the use of temporary storage for the material in progressive streaming or on-demand streaming. This is where a file is partially downloaded, stored to memory, \& played while the next portion of the file is downloading. True streaming or live-streaming does not employ partial memory capture. It streams directly from the source to the user via a computer processor that finalizes the broadcast.
-
 \section{Bitcoin, Ethereum, Blockstack, Toshi, Status \& the decentralized web revolution}
  The internet is in the middle of the august beginnings of decentralization revolution: centralized proprietary services are being replaced with \textbf{decentralized open ones with open source code}; trusted parties replaced with \textbf{verifiable mathematical computation}; brittle location addresses replaced with \textbf{resilient content addresses}; inefficient monolithic services replaced with \textbf{peer-to-peer algorithmic markets} ; complex inefficient unverifiable data-structures with \textbf{verifiable efficient data-structures, Merkle Trees}. Bitcoin, Ethereum, \& other block-chain networks have proven the utility of decentralized transaction ledgers. These public ledgers process sophisticated smart contract applications \& transact crypto-assets worth tens of billions of dollars every day. These systems are the first instances of internet wide open services, where participants form a decentralized network providing useful services for pay, with no central management or trusted parties.
 Virtually none of the ideas underpinning Bitcoin are new. They can all be traced to the academic literature going back decades.
@@ -97,6 +85,8 @@ other than mere profit,
 \fi
  including privacy, altruism \& a more inclusive distribution of control \& information. The emergence of Bitcoin \& subsequent block-chain technologies has generated a new digital asset class in which scarcity is based on mathematical properties \& equations re-balancing variables to maximize economic inclusiveness \& activity. Through cryptographic verification and game-theory based equilibrium, block-chain-based digital assets can be created, issued, and transmitted using software. Ownership of these cryptographic digital assets can be easily verified using public key cryptography and transfer of ownership maintained in an immutable decentralized distributed database ledger known as the block-chain. This lays the foundation for democratic transfer of value among entities in the decentralized web.
 We are in the very early big-bang stages of the crypto-currency decentralized web revolution on block-chain and several miracles are happening everyday harkening to the early merry days of web 1.0.
+
+
 
 \section{Motivation - design goals}
 In our development of Hoot, we aspire to address four problems with live streaming and compute over blockchain:
@@ -157,6 +147,17 @@ A consumer grade true real-time live-streaming service needs to be built from th
 % Hoot Vision
 % \fxerror*{need to enter vision or delete}
 
+\subsection{History of Live-Streaming}
+Over the last half a century, people have been fascinated by live video. On September 4, 1951, Harry Truman spoke at the Japanese Peace Treaty Conference in San Francisco and, this was the worlds first live broadcast. Four months later, The Today Show would become the first broadcast news program airing live in the United States. Since then, we have loved live video, from our favorite news stations to our guilty pleasures of reality television.
+
+\iffalse
+\sout{Streaming is a lot older in its origins than one might intuitively suppose. One of the earliest streaming platforms was Muzak. This along with similar audio systems played continuous music. When we think of streaming, though, we think computers \& the Internet. The full development of that capacity was more recent. Many technical advances in the 1990s \& 2000s improved the bandwidth of networks. This increased the number of people \& computers with access to those networks, creating the Internet as we know it today. Standard formats were also developed \& protocols that we use to code online material \& functions (TCP/IP, HTTP, HTML, etc.).}
+\fi
+
+As the bandwidth of connections to the Internet \& computing power available to the average person continued to increase, it was natural that the audio streaming used by Internet radio would graduate to streaming video. Data compression methods contributed a lot to this development as well. Video files contain a lot of information. Compression allows that information to be efficiently transmitted \& stored.
+
+\subsection{Live-Streaming versus On-Demand Streaming}
+The term “live-streaming” is sometimes applied where it doesn’t belong. Streaming from a recorded source, which is what one finds on YouTube, Netflix, \& many other commercial streaming sources, is on-demand streaming. This means that the user can watch the content at will, while live-streaming occurs only at the moment, in real-time. Live streaming comes from a content source such as video cameras and microphones. It is made available at the same time as the event being filmed occurs. On-demand streaming provides content from a recorded source instead. Streaming radio \& much Internet television consists of live-streaming. As far as the “streaming” portion of the process is concerned, live \& on-demand streaming are similar from the viewer’s perspective. They are quite different in technical \& procedural details from the standpoint of the producer or broadcaster, though. The main difference from a technical end is the use of temporary storage for the material in progressive streaming or on-demand streaming. This is where a file is partially downloaded, stored to memory, \& played while the next portion of the file is downloading. True streaming or live-streaming does not employ partial memory capture. It streams directly from the source to the user via a computer processor that finalizes the broadcast.
 
 \section{ERC223 Compatibility}
 We are monitoring the ERC223 token standard proposal\footnote{https://github.com/ethereum/EIPs/issues/223} and are factoring future compatibility into the design of our Namespace GPUCoin tokens.
