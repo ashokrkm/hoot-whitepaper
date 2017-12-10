@@ -39,8 +39,8 @@ all.pdf: main.tex
 	latexmk -pdf -pdflatex="xelatex" -use-make hootarads.tex
 	latexmk -pdf -pdflatex="xelatex" -use-make primer.tex
 	latexmk -pdf -pdflatex="xelatex" -use-make risk.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make merkledb.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make ico.tex
+	latexmk -pdf -pdflatex="pdflatex" -use-make merkledb.tex
+	latexmk -pdf -pdflatex="pdflatex" -use-make ico.tex
 	
 
 main.pdf: main.tex
