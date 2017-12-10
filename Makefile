@@ -35,14 +35,13 @@ alltex: all.pdf
 
 all.pdf: main.tex
 	latexmk -pdf -pdflatex="xelatex" -use-make main.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make live.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make hootarads.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make primer.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make risk.tex
-	latexmk -pdf -pdflatex="pdflatex" -use-make merkledb.tex
-	latexmk -pdf -pdflatex="pdflatex" -use-make ico.tex
-	
-
+	latexmk -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make live.tex
+	latexmk -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make hootarads.tex
+	latexmk -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make primer.tex
+	latexmk   -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make ico.tex
+	latexmk   -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make risk.tex	
+	# latexmk  -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make merkledb.tex
+# -pvc 
 main.pdf: main.tex
 	latexmk -pdf -pdflatex="xelatex" -use-make main.tex
 
