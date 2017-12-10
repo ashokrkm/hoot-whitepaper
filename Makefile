@@ -43,7 +43,10 @@ all.pdf: main.tex
 	# latexmk  -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make merkledb.tex
 # -pvc 
 main.pdf: main.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make main.tex
+	latexmk  -pdf -pdflatex="xelatex" -use-make main.tex
+
+preview: main.tex
+	latexmk -pvc  -pdf -pdflatex="xelatex" -use-make main.tex
 
 clean:
 	latexmk -CA
