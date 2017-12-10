@@ -8,7 +8,9 @@
 # The first rule in a Makefile is the one executed by default ("make"). It
 # should always be the "all" rule, so that "make" and "make all" are identical.
 all: main.pdf
-
+	
+alltex: all.pdf
+	
 # CUSTOM BUILD RULES
 
 # In case you didn't know, '$@' is a variable holding the name of the target,
@@ -30,6 +32,16 @@ all: main.pdf
 
 # -interactive=nonstopmode keeps the pdflatex backend from stopping at a
 # missing file reference and interactively asking you for an alternative.
+
+all.pdf: main.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make main.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make live.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make hootarads.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make primer.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make risk.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make merkledb.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make ico.tex
+	
 
 main.pdf: main.tex
 	latexmk -pdf -pdflatex="xelatex" -use-make main.tex
