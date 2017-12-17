@@ -10,7 +10,7 @@
 all: main.pdf
 	
 alltex: all.pdf
-	
+
 # CUSTOM BUILD RULES
 
 # In case you didn't know, '$@' is a variable holding the name of the target,
@@ -42,11 +42,17 @@ all.pdf: main.tex
 	latexmk   -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make risk.tex	
 	# latexmk  -pdf -pdflatex="xelatex" -interaction="nonstopmode"  -use-make merkledb.tex
 # -pvc 
+
+
+view: main.pdf 
+	open main.pdf
+
 main.pdf: main.tex
 	latexmk  -pdf -pdflatex="xelatex" -use-make main.tex
 
 preview: main.tex
 	latexmk -pvc  -pdf -pdflatex="xelatex" -use-make main.tex
+
 
 clean:
 	latexmk -CA
