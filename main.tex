@@ -273,7 +273,30 @@ Broadcasted video is continuously archived, and will be stored in decentralized 
 \end{itemize}
 
 
- 
+\subsubsection{Probablistic Micropayments}
+Ethereum Probabilistic Micropayments can send an arbitrary number of payments to an arbitrary number of recipients, without any per-recipient initialization or settlement transactions \footnote{Ethereum Probabilistic Micropayments
+ https://medium.com/@gustav.simonsson/ethereum-probabilistic-micropayments-ae6e6cd85a06}. Payment channels allow for the sending of arbitrary number of transactions  while only requiring two on-chain transactions:
+
+\begin{itemize}
+ \item[+]One transaction to initialize the payment channel.
+ \item[+]One transaction to close the channel and settle total amounts transferred.
+\end{itemize}
+
+GPUcoin network will leverage the Ethereum Probabilistic Micropayments system based on payment channels, to overcome the settling on Ethereum and current scaling issues associated with Ethereum Blockchain.
+
+Example Probabilistic Payment Scenario:
+\begin{itemize}
+\item[+]You are the video streaming host, charging \$1 per hour of video streamed.
+\item[+]A new user connects to your service and watches exactly 10 seconds of cute kittens.
+\item[+]Every 4s, the user sends you a off-chain ticket with 1/2500 probability of winning. The winning amount is set to \$2.78.
+\item[+]If you do not receive a payment ticket every 4s (within some margin to account for network latency), you simply disconnect the viewer
+\item[+]If the viewer does not receive any video feed, they immediately cease sending payment tickets.
+\item[+]When you receive a winning ticket, you claim it with an on-chain transaction, which transfers the wining value to you from the tokens locked up by the sender.
+\end{itemize}
+Even if a ticket is not winning, you still have cryptographic proof that you’re being paid, since neither the sender nor the recipient can manipulate the value that determines if a ticket wins. With the proof, you’re happy to continue streaming video to the viewer. As thousands of (new) viewers connect to you, there is no overhead per viewer -—  the only overhead is when you claim your winning tickets.
+For a given “average total payment”, the odds of winning (and frequency of tickets) determine the number of on-chain transactions required. Thus, the higher the winning amount, the less transaction fees paid over time by the recipient. The lower the winning amount, the less tokens have to be locked up by the sender, lowering their liquidity cost.
+
+
 \section{Traction \& Usage}
 A mobile consumer application is currently live on the iOS AppStore and Google Play-store. Hoot has received streams from 
 
