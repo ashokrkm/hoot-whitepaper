@@ -22,3 +22,6 @@
 *.pdf*
 
 .DS_Store
+
+*.bbl
+*.ent
